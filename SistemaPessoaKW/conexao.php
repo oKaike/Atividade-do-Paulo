@@ -4,7 +4,7 @@
        public static function pegarConexao(){
             if(!isset(self::$instancia)) {
                 self::$instancia = new PDO(
-                    "mysql:host=localhost; dbname=cadastroP; charset=utf8", "root", "");
+                    "mysql:host=localhost; dbname=cadastroP; charset=utf8", "root", "root");
             }
             return self::$instancia;   
        } 

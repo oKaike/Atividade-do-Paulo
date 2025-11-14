@@ -175,7 +175,7 @@
             var senha = document.getElementById("senha").value;
             
             var requisicao = new XMLHttpRequest();
-            requisicao.open("GET", "http://localhost/SistemaPessoaKW/controllerPessoa.php?cpf=" + cpf + "&senha=" + senha + "&acao=validaPessoa");
+            requisicao.open("GET", "http://localhost/Atividade-do-Paulo/SistemaPessoaKW/controllerPessoa.php?cpf=" + cpf + "&senha=" + senha + "&acao=validaPessoa");
             requisicao.send();
 
             requisicao.onload = function() {
@@ -194,7 +194,7 @@
             var senha = document.getElementById("senhaPainel").value;  
            
             var requisicao = new XMLHttpRequest();
-            requisicao.open("GET", "http://localhost/SistemaPessoaKW/controllerPessoa.php?cpf=" + cpf + "&nome=" + nome + "&contato=" + contato + "&senha=" + senha + "&acao=inserir");
+            requisicao.open("GET", "http://localhost/Atividade-do-Paulo/SistemaPessoaKW/controllerPessoa.php?cpf=" + cpf + "&nome=" + nome + "&contato=" + contato + "&senha=" + senha + "&acao=inserir");
             requisicao.send();
 
             requisicao.onload = function() {
@@ -209,7 +209,7 @@
             var senha = document.getElementById("senhaPainel").value;  
 
             var requisicao = new XMLHttpRequest();
-            requisicao.open("GET", "http://localhost/SistemaPessoaKW/controllerPessoa.php?cpf=" + cpf + "&nome=" + nome + "&contato=" + contato + "&senha=" + senha + "&acao=atualizar");
+            requisicao.open("GET", "http://localhost/Atividade-do-Paulo/SistemaPessoaKW/controllerPessoa.php?cpf=" + cpf + "&nome=" + nome + "&contato=" + contato + "&senha=" + senha + "&acao=atualizar");
             requisicao.send();
 
             requisicao.onload = function() {
@@ -220,7 +220,7 @@
         function deletar() {
             var cpf = document.getElementById('cpf').value;
             var requisicao = new XMLHttpRequest();
-            requisicao.open("GET", `http://localhost/SistemaPessoaKW/controllerPessoa.php?cpf=${cpf}&acao=apagar`);
+            requisicao.open("GET", `http://localhost/Atividade-do-Paulo/SistemaPessoaKW/controllerPessoa.php?cpf=${cpf}&acao=apagar`);
             requisicao.send();
 
             requisicao.onload = function() {
@@ -230,7 +230,7 @@
 
         function consulta() {
             var requisicao = new XMLHttpRequest();
-            requisicao.open("GET", "http://localhost/SistemaPessoaKW/controllerPessoa.php?acao=consultar");
+            requisicao.open("GET", "http://localhost/Atividade-do-Paulo/SistemaPessoaKW/controllerPessoa.php?acao=consultar");
             requisicao.send();
 
             requisicao.onload = function() {
@@ -259,7 +259,7 @@
             var horario = document.getElementById("horario").value;
 
             var requi = new XMLHttpRequest();
-            requi.open("GET", `http://localhost/SistemaPessoaKW/controllerAgenda.php?cpf=${cpf}&data=${data}&descricao=${descricao}&horario=${horario}&acao=inserir`);
+            requi.open("GET", `http://localhost/Atividade-do-Paulo/SistemaPessoaKW/controllerAgenda.php?cpf=${cpf}&data=${data}&descricao=${descricao}&horario=${horario}&acao=inserir`);
             requi.send();
         }
 
@@ -269,7 +269,7 @@
             var horario = document.getElementById("horario").value;
 
             var requi = new XMLHttpRequest();
-            requi.open("GET", `http://localhost/SistemaPessoaKW/controllerAgenda.php?cpf=${cpf}&data=${data}&horario=${horario}&acao=apagar`);
+            requi.open("GET", `http://localhost/Atividade-do-Paulo/SistemaPessoaKW/controllerAgenda.php?cpf=${cpf}&data=${data}&horario=${horario}&acao=apagar`);
             requi.send();
         }
 
@@ -280,14 +280,14 @@
             var horario = document.getElementById("horario").value;
 
             var requi = new XMLHttpRequest();
-            requi.open("GET", `http://localhost/SistemaPessoaKW/controllerAgenda.php?cpf=${cpf}&data=${data}&descricao=${descricao}&horario=${horario}&acao=atualizar`);
+            requi.open("GET", `http://localhost/Atividade-do-Paulo/SistemaPessoaKW/controllerAgenda.php?cpf=${cpf}&data=${data}&descricao=${descricao}&horario=${horario}&acao=atualizar`);
             requi.send();
         }
 
         function consultarAge() {
             var cpf = document.getElementById("cpfAgenda").value;
             var req = new XMLHttpRequest();
-            req.open("GET", `http://localhost/SistemaPessoaKW/controllerAgenda.php?cpf=${cpf}&acao=consultar`);
+            req.open("GET", `http://localhost/Atividade-do-Paulo/SistemaPessoaKW/controllerAgenda.php?cpf=${cpf}&acao=consultar`);
             req.send();
 
             req.onload = function() {

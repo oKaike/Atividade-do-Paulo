@@ -14,7 +14,7 @@
             $stm->bindValue(4, $pessoa->getSenha());
             $resultado = $stm->execute();
             if($resultado){
-                echo "cadastrado com sucesso";
+                echo "Cadastrado com sucesso";
             }else{
                 echo "erro ao cadastrar";
             }
@@ -29,7 +29,7 @@
             $stm->bindValue(1, $pessoa->getCpf());
             $resultado = $stm->execute();
             if($resultado){
-                echo "apagado com sucesso";
+                echo "Apagado com sucesso";
             }else{
                 echo "erro ao apagar";
             }
@@ -47,7 +47,7 @@
             $stm->bindValue(4, $pessoa->getCpf());
             $resultado = $stm->execute();
             if($resultado){
-                echo "atualizado com sucesso";
+                echo "Atualizado com sucesso";
             }else{
                 echo "erro ao atualizar";
             }
